@@ -8,7 +8,11 @@
 const nameUser = prompt("Whats your name?");
 const surnameUser = prompt("Whats your surname?");
 const colorUser = prompt("Whats your favorite color?");
-const passwordUser = nameUser + surnameUser + colorUser + "21";
+const numberUser = 25;
 
-const answerElement = document.getElementById("answer");
-answerElement.innerHTML = passwordUser;
+//const passwordUser = nameUser + surnameUser + colorUser + numberUser;
+// document.getElementById("answer").innerHTML = passwordUser;
+
+const passwordUser = `${nameUser}${surnameUser}${colorUser}${numberUser}`;
+document.getElementById("answer").innerHTML = passwordUser;
+console.log(passwordUser);
